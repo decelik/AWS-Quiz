@@ -38,7 +38,7 @@ function startQuiz() {
   backButton.innerHTML = "Back"; // Update back button text
 
   // Select 65 random questions from the questions pool
-  selectedQuestions = getRandomQuestions(questions, 999);
+  selectedQuestions = getRandomQuestions(questions, 65);
 
   updateProgressBar(); // Initialize progress bar
   showQuestion(); // Display the first question
@@ -289,7 +289,7 @@ function updateProgressBar() {
 function updateQuestionCounter() {
   questionCounterElement.innerHTML = `Question ${
     currentQuestionIndex + 1
-  } / 60`;
+  } / 65`;
 }
 
 // Update the displayed score for correct and incorrect answers

@@ -112,10 +112,10 @@ nav a:hover {
 body {
   background: linear-gradient(
     to bottom right,
-    #8c8a8f,
-    #6f6877,
-    #47445a,
-    #332b3b
+    #8f8a8e,
+    #776877,
+    #56445a,
+    #372b3b
   ); /* Creates a gradient background from dark to light */
   background-attachment: fixed; /* Keeps the gradient fixed when the page is scrolled */
   margin: 0; /* Removes the default margin around the body */
