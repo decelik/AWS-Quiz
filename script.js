@@ -20,7 +20,7 @@ const incorrectSound = new Audio("audio/incorrect_answer.mp3");
 let currentQuestionIndex = 0; // Track the current question index
 let score = 0; // Track user's score for correct answers
 let incorrectScore = 0; // Track user's incorrect answers
-let timeLeft = 7200; // 120 minutes in seconds for the quiz timer
+let timeLeft = 5400; // 90 minutes in seconds for the quiz timer
 let timerInterval; // Variable for the timer interval
 let quizEnded = false; // Flag to check if the quiz has ended
 
@@ -33,12 +33,12 @@ function startQuiz() {
   currentQuestionIndex = 0; // Reset the question index
   score = 0; // Reset the score
   incorrectScore = 0; // Reset incorrect answers
-  timeLeft = 7200; // Reset the timer
+  timeLeft = 5400; // Reset the timer
   nextButton.innerHTML = "Next"; // Update next button text
   backButton.innerHTML = "Back"; // Update back button text
 
-  // Select 40 random questions from the questions pool
-  selectedQuestions = getRandomQuestions(questions, 60);
+  // Select 65 random questions from the questions pool
+  selectedQuestions = getRandomQuestions(questions, 999);
 
   updateProgressBar(); // Initialize progress bar
   showQuestion(); // Display the first question
